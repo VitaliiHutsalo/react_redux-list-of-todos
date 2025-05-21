@@ -37,9 +37,7 @@ export const App: React.FC = () => {
           return true;
       }
     })
-    .filter(todo =>
-      todo.title.toLocaleLowerCase().includes(query.toLowerCase()),
-    );
+    .filter(todo => todo.title.toLowerCase().includes(query.toLowerCase()));
 
   return (
     <>

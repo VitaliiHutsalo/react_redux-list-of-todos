@@ -25,7 +25,7 @@ export const TodoModal: React.FC = () => {
   }, [todo?.userId]);
 
   if (!todo) {
-    return;
+    return null;
   }
 
   return (
